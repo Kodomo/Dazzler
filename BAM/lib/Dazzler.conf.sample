@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conf>
+<!-- Database Configuration  -->
+		<db>
+				<user>dbuser</user> <!-- User name of the PgSQL account -->
+				<password>dbpass</password> 
+				<host>dbhost</host> <!-- Server name of the PgSQL host -->
+				<name>dbname</name> <!-- Name of the Dazzler database that holds the Dazzler tables -->
+				<db_type>pg</db_type><!-- Database type (TODO) -->
+		</db>
+
+<!-- Other Dazzler site Settings -->
+		<conf>
+				<adminUid>1001</adminUid> <!-- uid of default manager-->
+				<defaultGroup>1</defaultGroup> <!-- Defaulf group for unknown hosts-->
+				<logo>/BAM/pics/nologo.png</logo> <!-- Logo for the Dazzler web page topbar-->
+				<session_name>Dazzler_sample</session_name> <!-- php session name -->
+				<ext_base_url>/BAM/ext/ext-3.3.0</ext_base_url> <!-- base url where Ext JS is stored -->
+				<ext_ux_base_url>/BAM/ext/ext-3.3.0/examples/ux</ext_ux_base_url> <!-- base url where Ext-ux JS is stored -->
+				<iconMgr_url>/BAM/ext/iconMgr</iconMgr_url> <!-- base url where TDGi.iconMgr.js stored -->
+				<iconMgr_base_url>/BAM/ext/fam_icons</iconMgr_base_url> <!-- base url where TDGi.iconMgr fam-images stored -->
+		</conf>
+
+<!-- BAM Reply base Parameters -->
+		<account_manager>
+				<name>Dazzler Long Name</name> <!-- Descriptive name of your Dazzler server, it will be displayed in BOINC Manager-->
+				<master_url>http://BAM_URL/BAM/</master_url> <!--The Master URL of Dazzler-->
+				<min_passwd_length>8</min_passwd_length> <!-- Minimum password length -->
+				<usernames>1</usernames> <!--Allows the employment of user names instead of emails for user credentials-->
+				<repeat_sec>28800</repeat_sec> <!--Polling time for clients-->
+				<public_signature> <!--Public signature created with BOINC server crypt_prog program for signing projects and ensure security among Dazzler and BOINC clients-->
+				</public_signature>
+				<min_core_client_version>600</min_core_client_version> <!--Minimum BOINC core client version required for working with Dazzler. By default 6.0-->
+		</account_manager>
+
+<!-- BAM host Reply base Preferences -->
+		<base_preferences>
+			<cpu_scheduling_period_minutes>60</cpu_scheduling_period_minutes> 
+			<max_cpus>8</max_cpus> 
+			<run_on_batteries>0</run_on_batteries> 
+			<ram_max_used_busy_pct>50</ram_max_used_busy_pct> 
+			<ram_max_used_idle_pct>90</ram_max_used_idle_pct> 
+			<disk_max_used_gb>10</disk_max_used_gb> 
+			<disk_min_free_gb>10</disk_min_free_gb> 
+			<work_buf_min_days>0,1</work_buf_min_days> 
+			<max_bytes_sec_down>0</max_bytes_sec_down> 
+			<max_bytes_sec_up>0</max_bytes_sec_up> 
+			<net_start_hour>0</net_start_hour> 
+			<net_end_hour>0</net_end_hour> 
+			<vm_max_used_pct>75</vm_max_used_pct> 
+			<leave_apps_in_memory>0</leave_apps_in_memory> 
+			<confirm_before_connecting>0</confirm_before_connecting>  
+			<hangup_if_dialed>0</hangup_if_dialed>  
+			<disk_interval>60</disk_interval> 	
+		</base_preferences>
+</conf>

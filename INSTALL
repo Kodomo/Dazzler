@@ -1,0 +1,42 @@
+Dazzler
+=======
+This document describes the process to install and configure Dazzler.
+
+
+Requirements
+============
+The following software/library are required to work with Dazzler:
+
+* Apache
+* PHP 5+
+* PHP-psql
+* Postgres
+
+* Ext-JS 3 (3.3.0)
+* Ext-JS UX
+* TDGi.iconMgr
+* famfam icons
+
+Preparing the server
+====================
+
+* You should first determine wich will be your *BAM_URL* (http://BAM_URL/). This value is important because the signing keys are linked to it, and it cannot be modified once started attaching hosts.
+* Setup a site (or a virtualhost), for the BAM_URL.
+* Create a postgres database
+* Create a pair of keys for the BAM. (see bamadmin	http://boinc.berkeley.edu/trac/wiki/KeySetup )
+
+NOTE: Dazzler it's preset to operate in /BAM, so the BAM url is really http://BAM_URL/BAM. This allow the admin, to create content for the BAM manually or using a content management system (like Wordpress). But if you dont like that, the easier way is to redirect traffic from / to /BAM.
+
+
+Installation process
+====================
+
+* Download dazzler source code. And copy/unzip/link it to the prepared site root. a BAM directory should be present in the root.
+* Download and setup the libraries. A prepared package can be found at ext.tar.bz2. If you choose to use it, unzip it *in* the BAM directory. 
+* Setup the database. First BAM/conf/db_base.sql and then BAM/conf/db_dazzler.sql.
+* Edit the sample configuration file to suit your needs.  Ext/library related info don't need modification if the prepared package was used.
+* Login to the BAM with your web browser in: http://BAM_URL/BAM . Default admin account it's bamadmin:dazzler . This account shouldn't be used for managing hosts, and for *OBVIOUS* reasons the password must be changued inmediatly.
+* Setup the periodic task : 0 * * * * /path/to/dazzler/BAM/cron/crontasks.sh
+
+
+More info at the wiki.

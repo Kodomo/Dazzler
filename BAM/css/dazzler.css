@@ -1,0 +1,156 @@
+a {
+color: #1e4176;
+}
+
+a:link{
+color: #1e4176;
+}
+
+a:hover{
+color: #15428b;
+}
+
+/* formato de los paneles */
+.x-panel-body p {
+   margin:8px 3px !important;
+}
+.x-panel-body h4{
+	color:#083772;
+   border-bottom:1px dashed #ccc;
+   margin:8px 0;
+   padding-bottom:3px;
+}
+
+#Dazzler-header{
+   border:0 none;
+   background:#1E4176 url(/BAM/pics/hd-bg.gif) repeat-x 0 0;
+   padding-top:3px;
+   padding-left:3px;
+}
+
+#Dazzler-header .Dazzler-title {
+    font:normal 16px tahoma, arial, sans-serif;
+    color:white;
+    margin:3px;
+}
+
+.Dazzler-nula td{
+    color:gray;
+}
+
+.controlBtn img {
+      padding-left: 4px;
+      cursor: pointer;
+   }
+
+/*
+ * FileUploadField component styles
+ */
+.x-form-file-wrap {
+    position: relative;
+    height: 22px;
+}
+.x-form-file-wrap .x-form-file {
+	position: absolute;
+	right: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+    height: 22px;
+}
+.x-form-file-wrap .x-form-file-btn {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+.x-form-file-wrap .x-form-file-text {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    color: #777;
+}
+
+/*
+ * Welcome
+ */
+
+
+.x-panel-body {
+	font: 12px tahoma,arial,sans-serif; 
+    position:relative;
+    top:0;
+    left: 0;
+    zoom:1;
+}
+.col{
+	margin:0 250px 0 10px;
+    zoom:1;
+    padding: 10px 0;
+}
+
+.col-last {
+    width: 220px;
+    position:absolute;
+    right:10px;
+    top:10px;
+}
+
+.block{
+	margin-bottom:10px;
+}
+.block-title{
+	color: #1E4176;
+	font:normal 18px helvetica,arial,tahoma,verdana,sans-serif;
+    letter-spacing:-1px;
+    padding: 4px;
+	padding-left: 8px;
+}
+.block-body{
+	padding:8px;
+	padding-top:2px;
+}
+.block-body b{
+	color:#333333;
+	font-size:11px;
+}
+.block-body em {
+	display:block;
+	margin-top:5px;
+	font-size:11px;
+   color:gray;
+	text-align:right;
+}
+.list{
+	list-style: square;
+	padding-left:20px;
+	margin-top:5px;
+}
+
+.res-block {
+    padding-top:5px;
+    background:transparent url(/BAM/pics/block-top.gif) no-repeat;
+    width:210px;
+    margin-bottom:15px;
+}
+.res-block-inner {
+    padding:6px 11px;
+    background:transparent url(/BAM/pics/block-bottom.gif) no-repeat left bottom;
+}
+
+.res-block h3 {
+/*     font: bold 12px tahoma,arial,sans-serif; */
+    color:#555;
+    margin-bottom:8px;
+}
+
+.res-block ul {
+    list-style-type: disc;
+    margin-left:15px;
+/*     font: normal 12px tahoma,arial,sans-serif; */
+    color:#555;
+}
+
+.res-block ul li {
+    margin:0 0 5px 3px;
+}

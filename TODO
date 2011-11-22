@@ -1,0 +1,23 @@
+TODO list
+==========
+
+This list is somehow sorted to reflect the priorty of the thing to do.
+
+- Statistical interface, to se how the farms go.
+- Full preferences setup.
+- Better color scheme, for dead hosts.
+- Don't use plantext passwords (client passwords encode).
+
+- Language support
+- Project manager interfase.
+- Table renaming, for a more intuitive one.
+- Upgrade interface to use Ext 4
+- Better, easier install procedure.
+- User manual.
+
+- A better, and more complete TODO list.
+- Mysql support.
+- Fix bugs?
+
+
+Any suggestion will be considered.

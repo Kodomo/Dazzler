@@ -1,0 +1,24 @@
+Dazzler
+===
+A BOINC Account manager, for managing groups of hosts as a single farm.  It is not thought as a replacement for a common BAM, but a way to ease the managament of medium/large groups of hosts working in several projects, managed by their owners. 
+
+Inspired from: http://boinc.berkeley.edu/trac/wiki/VirtualCampusSupercomputerCenter
+
+
+Acknowledgments
+================
+- BOINC-dev mailing list for all it's support.
+- jarifa project, for a lot of ideas.
+- Universidad of Concepcion, Unidad de Servicios Informaticos (Chile).
+- University of California (USA).
+
+Installation 
+============
+
+See the 'INSTALL' file for more detailed directions.
+
+Todo
+====
+
+A lot, this it's just a functional beginning. See TODO for a list.
+
